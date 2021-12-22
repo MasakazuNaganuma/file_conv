@@ -52,6 +52,6 @@ if __name__ == '__main__':
         main(option, input_filename, output_filename)
     else:
         print('usage: python csv2pkl.py option input_filename output_filenname')
-        print('option : c2p ------ Csv file converts to pkl file.')
-        print('       : t2p ------ Tsv file converts to pkl file.')
-        print('       : p2c ------ Pkl file converts to csv file.')
+        print('option : c2p ------ Csv file is converted to pkl file.')
+        print('       : t2p ------ Tsv file is converted to pkl file.')
+        print('       : p2c ------ Pkl file is converted to csv file.')
