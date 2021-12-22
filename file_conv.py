@@ -11,21 +11,21 @@ import pickle
 
 
 def csv2pkl(input_filename, output_filename):
-    print('csv2pkl()')
+    print('Converted csv --> pkl.')
     df = pd.read_csv(input_filename)
     with open(output_filename, 'wb') as f:
         pickle.dump(df, f)
 
 
 def tsv2pkl(input_filename, output_filename):
-    print('tsv2pkl()')
+    print('Converted tsv --> pkl.')
     df = pd.read_table(input_filename)
     with open(output_filename, 'wb') as f:
         pickle.dump(df, f)
 
 
 def pkl2csv(input_filename, output_filename):
-    print('pkl2csv()')
+    print('Converted pkl --> csv.')
     with open(input_filename, 'rb') as f:
         df = pickle.load(f)
     df.to_csv(output_filename, index=False)
